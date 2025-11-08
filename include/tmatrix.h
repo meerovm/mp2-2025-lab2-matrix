@@ -182,7 +182,7 @@ public:
           return q;
       }
   }
-  TDynamicVector operator*(const TDynamicVector& v) noexcept(noexcept(T()))
+  TDynamicVector operator*(const TDynamicVector& v)
   {
       if (sz != v.sz) {
           throw runtime_error("lengths are not equal");
