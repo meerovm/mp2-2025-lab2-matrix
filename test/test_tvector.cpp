@@ -235,13 +235,13 @@ TEST(TDynamicVector, cant_subtract_vectors_with_not_equal_size)
 
 TEST(TDynamicVector, can_multiply_vectors_with_equal_size)
 {
-	TDynamicVector<int> v1(10);
-	TDynamicVector<int> v2(10);
-	for (int i = 0; i < 10; i++) {
+	TDynamicVector<int> v1(3);
+	TDynamicVector<int> v2(3);
+	for (int i = 0; i < 3; i++) {
 		v1[i] = i;
 		v2[i] = i;
 	}
-	EXPECT_EQ((v1 * v2).at(2), 4);
+	EXPECT_EQ((v1 * v2), 5);
 
 }
 
